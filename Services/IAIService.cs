@@ -1,6 +1,8 @@
-﻿namespace OpenAIApi.Models.Services
+﻿using OpenAIApi.Models;
+
+namespace OpenAIApi.Services
 {
-    public interface IOpenAIService
+    public interface IAIService
     {
         /// <summary>
         /// Sends a completion request based on the provided prompt, and returns the completion response from the OpenAI API

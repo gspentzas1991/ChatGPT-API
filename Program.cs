@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using OpenAIApi.Models.Services;
+using OpenAIApi.Services;
 using System.Reflection;
 
 internal class Program
@@ -17,7 +17,7 @@ internal class Program
         {
             options.EnableAnnotations();
         });
-        builder.Services.AddSingleton<IOpenAIService, OpenAIService>();
+        builder.Services.AddSingleton<IAIService, OpenAIService>();
 
         var app = builder.Build();
 

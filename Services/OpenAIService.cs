@@ -1,10 +1,9 @@
-﻿using System.Net.Http.Headers;
-using System.Net.Http;
-using Microsoft.AspNetCore.Authorization.Infrastructure;
+﻿using OpenAIApi.Models;
+using System.Net.Http.Headers;
 
-namespace OpenAIApi.Models.Services
+namespace OpenAIApi.Services
 {
-    public class OpenAIService : IOpenAIService
+    public class OpenAIService : IAIService
     {
         private readonly string? _apiKey;
         private readonly ILogger<OpenAIService> _logger;
@@ -87,7 +86,7 @@ namespace OpenAIApi.Models.Services
                 top_p = 1,
                 frequency_penalty = 0,
                 presence_penalty = 0.6,
-                stop = new List<string>() { }
+                stop = null
             };
             return data;
         }

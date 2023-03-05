@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using OpenAIApi.Models;
-using OpenAIApi.Models.Services;
+using OpenAIApi.Services;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace OpenAIApi.Controllers
@@ -11,9 +11,9 @@ namespace OpenAIApi.Controllers
     public class CompletionController : ControllerBase
     {
         private readonly ILogger<CompletionController> _logger;
-        private readonly IOpenAIService _openAIService;
+        private readonly IAIService _openAIService;
 
-        public CompletionController(ILogger<CompletionController> logger, IOpenAIService completionService)
+        public CompletionController(ILogger<CompletionController> logger, IAIService completionService)
         {
             _logger = logger;
             _openAIService = completionService;
