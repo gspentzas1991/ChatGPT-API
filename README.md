@@ -1,5 +1,5 @@
 # ChatGPT-API
- An API for ChatGPT/OpenAI completions. Supports endpoints for the chat, completion and content-moderation models
+A lightweight ASP.NET Core API for ChatGPT/OpenAI. Supports requests for chat, completions and moderation
 
 # API key
 In order to register your OpenAI API Key, you need to create a User Secret file with your OpenAI API key
