@@ -11,7 +11,7 @@ namespace OpenAIApi.Services
         public OpenAIService(ILogger<OpenAIService> logger, IConfiguration configuration)
         {
             _logger = logger;
-            _apiKey = configuration["ApiKey"];
+            _apiKey = configuration["OpenAI:ApiKey"];
         }
 
         public async Task<CompletionResponse> GetCompletionResponseAsync(CompletionRequest request)
