@@ -1,5 +1,5 @@
 # ChatGPT-API
-A lightweight ASP.NET Core API for ChatGPT/OpenAI. Supports requests for chat, completions and moderation
+A lightweight ASP.NET Core API for ChatGPT/OpenAI. Supports requests for chat (ChatGPT 3.5 models), completions (davinci 3 model) and moderation
 
 This is an unofficial project, not affiliated with OpenAI
 
